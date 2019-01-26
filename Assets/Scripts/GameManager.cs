@@ -39,7 +39,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         currentGameState  = GameState.menu;
-        audio.play();
     }
 
     // Update is called once per frame
@@ -95,6 +94,7 @@ public class GameManager : MonoBehaviour
         }
     }
     public void startGame(){
+        audio.Play();
         //Esconder todos los demás menus.
         MenuManager.sharedInstance.hideNotInGameMenus();
         ContinueGame();
