@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class MenuManager : MonoBehaviour
     public Canvas menuCanvas, gameCanvas, 
                   gameOverCanvas, pausedGameCanvas, 
                   victoryCanvas, creditsCanvas;    
+    private RawImage gameCanvasColor;
 
 
     //=========================================================================
@@ -22,8 +24,11 @@ public class MenuManager : MonoBehaviour
         {
             sharedInstance = this;
         }
+        gameCanvasColor = gameCanvas.GetComponentInChildren<RawImage>();
     }
 
+    private void Start() {
+    }
 
     //=========================================================================
     //Our methods
@@ -78,8 +83,7 @@ public class MenuManager : MonoBehaviour
         showGameMenu();
     }
 
-    public void setGameCanvasState(){
-        //TODO: lógica para cambiar la pantalla del inGame cuando el personaje
-        //va perdiendo cordura.
+    public void setGameCanvasState(float alpha){
+        gameCanvasColor.color = new Vector4(0f, 0f, 0f, alpha/100);
     }
 }
