@@ -1,0 +1,29 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MovementInput : MonoBehaviour
+{
+
+public float InputX;
+public float InputY;
+public Vector3 desiredModeDirection;
+
+public bool blockRotation
+
+
+
+
+
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
