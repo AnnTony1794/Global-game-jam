@@ -38,24 +38,24 @@ public class MenuManager : MonoBehaviour
     //=========================================================================
     //Our methods
     //=========================================================================
-    public void ShowMainMenu(){
+    public void showMainMenu(){
         menuCanvas.enabled = true;
     }
-    public void HideMainMenu(){
+    public void hideMainMenu(){
         menuCanvas.enabled = false;
     }
 
-    public void ShowGameMenu(){
+    public void showGameMenu(){
         gameCanvas.enabled = true;
     }
-    public void HideGameMenu(){
+    public void hideGameMenu(){
         gameCanvas.enabled = false;
     }
 
-    public void ShowGameOverMenu(){
+    public void showGameOverMenu(){
         gameOverCanvas.enabled = true;
     }
-    public void HideGameOverMenu(){
+    public void hideGameOverMenu(){
         gameOverCanvas.enabled = false;
     }
 }

@@ -6,7 +6,8 @@ public enum GameState
 {
     inGame,
     menu,
-    gameOver
+    gameOver,
+    paused
 }
 
 public class GameManager : MonoBehaviour
@@ -54,11 +55,15 @@ public class GameManager : MonoBehaviour
             //TODO: Iniciar o reiniciar la escena.
             break;
             case GameState.menu:
-            //TODO: Mostrar menú.
+            startGame();
             break;
             case GameState.gameOver:
             //TODO: Lógica de muerte.
             break;
         }
+    }
+    public void startGame(){
+        MenuManager.sharedInstance.hideMainMenu();
+        currentGameState = GameState.inGame;
     }
 }
