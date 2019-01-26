@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class SimpleMove : MonoBehaviour
 {
-
-    float mouseX, mouseY;
     public float RotationSpeed = 1;
     void Start()
     {
@@ -20,18 +18,10 @@ public class SimpleMove : MonoBehaviour
     {
         float hor = Input.GetAxis("Horizontal");
         float ver = Input.GetAxis("Vertical");
-        Vector3 playerMovement = new Vector3(hor, -ver, 0.0f) * 10 * Time.deltaTime;
+        Vector3 playerMovement = new Vector3(hor, 0, ver) * 10 * Time.deltaTime;
         transform.Translate(playerMovement, Space.Self);
 
-        mouseX += Input.GetAxis("Mouse X") * RotationSpeed;
-        mouseY += Input.GetAxis("Mouse Y") * -RotationSpeed;
-        mouseY = Mathf.Clamp(mouseY, -30f, 60f);
-        transform.Rotate(mouseX, mouseY, 0);
-        /*
-        transform.LookAt(Target);
-        Target.rotation = Quaternion.Euler(mouseY, mouseX, 0);
-        Player.rotation = Quaternion.Euler(0, mouseX, 0);
-        */
-
+        hor = Input.GetAxis("Horizontal2");
+        transform.Rotate(0, hor*1.2f, 0);
     }
 }
