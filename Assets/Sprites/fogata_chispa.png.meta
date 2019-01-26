@@ -1,28 +1,22 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: a2d9e1354d2b93e40951b0abad46f4e8
-TextureImporter:
-  fileIDToRecycleName: {}
-=======
-guid: 7393d40c5d1a92a459252949cd9d32dd
+guid: ee69c674093a51c438e89b14948a3bdf
 TextureImporter:
   fileIDToRecycleName:
-    21300000: walk_0
-    21300002: walk_1
-    21300004: walk_2
-    21300006: walk_3
-    21300008: walk_4
-    21300010: walk_5
->>>>>>> 783115ad265c03b9f2e79a24c60101022db0bbda
+    21300000: fogata_chispa_0
+    21300002: fogata_chispa_1
+    21300004: fogata_chispa_2
+    21300006: fogata_chispa_3
+    21300008: fogata_chispa_4
+    21300010: fogata_chispa_5
+    21300012: fogata_chispa_6
+    21300014: fogata_chispa_7
+    21300016: fogata_chispa_8
+    21300018: fogata_chispa_9
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
     mipMapMode: 0
-<<<<<<< HEAD
-    enableMipMap: 1
-=======
     enableMipMap: 0
->>>>>>> 783115ad265c03b9f2e79a24c60101022db0bbda
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -47,18 +41,6 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-<<<<<<< HEAD
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
-    wrapU: -1
-    wrapV: -1
-    wrapW: -1
-  nPOTScale: 1
-  lightmap: 0
-  compressionQuality: 50
-  spriteMode: 0
-=======
     filterMode: 0
     aniso: -1
     mipBias: -100
@@ -69,7 +51,6 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
->>>>>>> 783115ad265c03b9f2e79a24c60101022db0bbda
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -78,15 +59,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-<<<<<<< HEAD
-  alphaIsTransparency: 0
-  spriteTessellationDetail: -1
-  textureType: 0
-=======
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
->>>>>>> 783115ad265c03b9f2e79a24c60101022db0bbda
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -98,9 +73,6 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-<<<<<<< HEAD
-    textureCompression: 1
-=======
     textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
@@ -113,7 +85,6 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
->>>>>>> 783115ad265c03b9f2e79a24c60101022db0bbda
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -121,82 +92,15 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-<<<<<<< HEAD
-    sprites: []
-    outline: []
-    physicsShape: []
-    bones: []
-    spriteID: 
-=======
     sprites:
     - serializedVersion: 2
-      name: walk_0
+      name: fogata_chispa_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 138
-        width: 29
-        height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1622baedda2022346a6e317c8acc5e10
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_1
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 138
-        width: 29
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6afb227977923a74b8b18ca493b1a9c6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_2
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 74
-        width: 29
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 58af8d802abc86d4ba7fb679c572b9e4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walk_3
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 74
-        width: 29
-        height: 51
+        x: 1
+        y: 96
+        width: 30
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,19 +108,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0379ea7904411ee4385f558a99a2429a
+      spriteID: 950489ecdfeab8c43b1fa7c7b4702885
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_4
+      name: fogata_chispa_1
       rect:
         serializedVersion: 2
-        x: 18
-        y: 10
-        width: 29
-        height: 50
+        x: 33
+        y: 96
+        width: 30
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,19 +128,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27b99f50302e554409d0f0f3024cf8ae
+      spriteID: 4571d380dc2f80b42b18b9c32e8cd5cf
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walk_5
+      name: fogata_chispa_2
       rect:
         serializedVersion: 2
-        x: 82
-        y: 10
-        width: 29
-        height: 50
+        x: 65
+        y: 96
+        width: 30
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,7 +148,147 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a802456c46fd2cb42a7aa79a584f0c07
+      spriteID: 3eb7805fd9d3b244298c93ecce0f7639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogata_chispa_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 64
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1c6175592761b49b16cfa53adfa135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogata_chispa_4
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 64
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6879c1ce11e18024fa76e4cb118bd700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogata_chispa_5
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 64
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0b8c69f5e3673458d2ed508da1ef99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogata_chispa_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 32
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11665196ae2427b4c9ef38d51c45ab1e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogata_chispa_7
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 32
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73ce08f62ff26d4f8f9ecc5e0dfdd56
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogata_chispa_8
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 32
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c38fee3a93c6fd843a826e87f24f00ee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fogata_chispa_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ffc442503e28444b7994524cf947ab
       vertices: []
       indices: 
       edges: []
@@ -252,8 +296,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e81def13c9bfc3d4aa78b6ba0085390a
->>>>>>> 783115ad265c03b9f2e79a24c60101022db0bbda
+    spriteID: c4792ad16d40d374581c10b06cca1990
     vertices: []
     indices: 
     edges: []
