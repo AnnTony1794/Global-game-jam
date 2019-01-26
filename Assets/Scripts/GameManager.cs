@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         currentGameState  = GameState.menu;
-        audio.Play();
+        GetComponent<AudioSource>().Play();
     }
 
     // Update is called once per frame

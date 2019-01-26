@@ -1,13 +1,18 @@
 fileFormatVersion: 2
-guid: 4d3fefa280d28454ebbbed3c22721ed4
+guid: 2ac9b2ab3417f594596cc6cf8cd69b18
 TextureImporter:
   fileIDToRecycleName:
-    21300000: sombra tronco 2_0
-    21300002: sombra tronco 2_1
-    21300004: sombra tronco 2_2
-    21300006: sombra tronco 2_3
-    21300008: sombra tronco 2_4
-    21300010: sombra tronco 2_5
+    21300000: roca shadow_0
+    21300002: roca shadow_1
+    21300004: roca shadow_2
+    21300006: roca shadow_3
+    21300008: roca shadow_4
+    21300010: roca shadow_5
+    21300012: roca shadow_6
+    21300014: roca shadow_7
+    21300016: roca shadow_8
+    21300018: roca shadow_9
+    21300020: roca shadow_10
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -90,13 +95,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sombra tronco 2_0
+      name: roca shadow_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 128
-        width: 24
-        height: 64
+        x: 0
+        y: 96
+        width: 28
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -104,19 +109,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b29a70fcb146da341bc5594bd712b5b5
+      spriteID: 170b163847f8fee41aed062d3b8776e1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sombra tronco 2_1
+      name: roca shadow_1
       rect:
         serializedVersion: 2
-        x: 82
-        y: 128
-        width: 25
-        height: 64
+        x: 32
+        y: 96
+        width: 28
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,19 +129,39 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d90e265ccd673b4791cec18d465c6db
+      spriteID: d8ff5326f362047458ebb188030b1738
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sombra tronco 2_2
+      name: roca shadow_2
       rect:
         serializedVersion: 2
-        x: 18
+        x: 64
+        y: 96
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6c2fdf63350954094a010810ab5cd0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roca shadow_3
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 64
-        width: 25
-        height: 64
+        width: 28
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,19 +169,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 574a816703daec94ebb12c617e779454
+      spriteID: ce72be2ee2ab3ea48aed2df193be0185
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sombra tronco 2_3
+      name: roca shadow_4
       rect:
         serializedVersion: 2
-        x: 82
+        x: 32
         y: 64
-        width: 25
-        height: 64
+        width: 28
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,19 +189,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7fb6593a8e567546b2270407ca18cc8
+      spriteID: d440024c221a60e469f264e8c2598962
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sombra tronco 2_4
+      name: roca shadow_5
       rect:
         serializedVersion: 2
-        x: 18
-        y: 0
-        width: 25
-        height: 64
+        x: 64
+        y: 64
+        width: 28
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,19 +209,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31b0db109188db84e95aa065cfddd7f6
+      spriteID: 7b40cd4b406ba4d4ea86857b48a6bb90
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sombra tronco 2_5
+      name: roca shadow_6
       rect:
         serializedVersion: 2
-        x: 82
-        y: 0
-        width: 25
-        height: 64
+        x: 0
+        y: 32
+        width: 28
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,7 +229,87 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e53091a48942854fbdcda2480982dfa
+      spriteID: 8fa439f0839db324aac137d7a7fe8d6f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roca shadow_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca5aa357b16d14468ab55d143d1f5a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roca shadow_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cba6b9d638a4d947987b5756ff3e397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roca shadow_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5006a73e278be4a40a4bd927cec019aa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roca shadow_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164277128dd507e439c85a6dc9764907
       vertices: []
       indices: 
       edges: []
@@ -212,7 +317,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ca2173d26d575f044ab5e2353e24123c
+    spriteID: 374afa4e7e867fa41945d55d630a8e69
     vertices: []
     indices: 
     edges: []
