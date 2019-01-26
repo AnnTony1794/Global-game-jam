@@ -26,7 +26,8 @@ public class GameManager : MonoBehaviour
         //Instanciate singleton
         if(sharedInstance == null){
             sharedInstance = this;
-        }    
+        }
+        
     }
 
 
@@ -94,14 +95,23 @@ public class GameManager : MonoBehaviour
     public void startGame(){
         //Esconder todos los demás menus.
         MenuManager.sharedInstance.hideNotInGameMenus();
+        ContinueGame();
+        if(currentGameState == GameState.paused || currentGameState == GameState.menu){
+        }
+        if(currentGameState == GameState.gameOver){
+                SanityManager.sharedInstance.playerSanity = 0;
+        }
         //Poner el estado del juego inGame.
         currentGameState = GameState.inGame;
     }
     public void pauseGame(){
         MenuManager.sharedInstance.showPauseMenu();
         currentGameState = GameState.paused;
+        PauseGame();
     }
     public void die(){
+        pauseGame();
+        MenuManager.sharedInstance.hidePauseMenu();
         MenuManager.sharedInstance.showGameOverMenu();
         currentGameState = GameState.gameOver;
     }
@@ -115,4 +125,19 @@ public class GameManager : MonoBehaviour
         //Resetear el nivel si es que hay cambios a lo largo de la partida.
     }
 
+
+    private void PauseGame()
+    {
+        Time.timeScale = 0;
+        //Disable scripts that still work while timescale is set to 0
+        GameObject.FindGameObjectWithTag("Player").GetComponent<SimpleMove>().enabled = false;
+        GameObject.Find("InGameCanvas").GetComponent<InGameScript>().enabled = false;
+    } 
+    private void ContinueGame()
+    {
+        Time.timeScale = 1;
+        //enable the scripts again
+        GameObject.FindGameObjectWithTag("Player").GetComponent<SimpleMove>().enabled = true;
+        GameObject.Find("InGameCanvas").GetComponent<InGameScript>().enabled = true;
+    }
 }

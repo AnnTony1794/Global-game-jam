@@ -21,6 +21,7 @@ public class SanityManager : MonoBehaviour
     //=========================================================================
     public int playerSanity;
     public SanityState currentSanityState;
+    public static SanityManager sharedInstance;
 
     //=========================================================================
     //Unity methods
@@ -28,6 +29,9 @@ public class SanityManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(sharedInstance == null){
+            sharedInstance = this;
+        }
         playerSanity = 0;
         currentSanityState = SanityState.sane;
     }
@@ -46,7 +50,7 @@ public class SanityManager : MonoBehaviour
         }
         else if (playerSanity == 100)
         {
-            //Lógica de muerte del personaje.
+            GameManager.sharedInstance.die();
         }
     }
 
@@ -67,7 +71,7 @@ public class SanityManager : MonoBehaviour
         if(GameManager.sharedInstance.currentGameState == GameState.paused){
             return;
         }
-        playerSanity += sanity;
+        playerSanity -= sanity;
         if(playerSanity < MIN_SANITY){
             playerSanity = MIN_SANITY;
         }
