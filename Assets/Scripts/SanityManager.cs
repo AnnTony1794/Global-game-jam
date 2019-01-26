@@ -55,15 +55,15 @@ public class SanityManager : MonoBehaviour
     //Our methods
     //=========================================================================
     public void sanityIncrease(int sanity){
+        playerSanity += sanity;
         if(playerSanity > MAX_SANITY){
             playerSanity = MAX_SANITY;
         }
-        playerSanity += sanity;
     }
     public void sanityDecrease(int sanity){
+        playerSanity += sanity;
         if(playerSanity < MIN_SANITY){
             playerSanity = MIN_SANITY;
         }
-        playerSanity += sanity;
     }
 }
