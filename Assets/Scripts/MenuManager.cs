@@ -55,7 +55,7 @@ public class MenuManager : MonoBehaviour
     public void ShowGameOverMenu(){
         gameOverCanvas.enabled = true;
     }
-    public void HideGameMenu(){
+    public void HideGameOverMenu(){
         gameOverCanvas.enabled = false;
     }
 }
