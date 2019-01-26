@@ -8,7 +8,9 @@ public class MenuManager : MonoBehaviour
     //Variables
     //=========================================================================
     public static MenuManager sharedInstance;
-    public Canvas menuCanvas, gameCanvas, gameOverCanvas;    
+    public Canvas menuCanvas, gameCanvas, 
+                  gameOverCanvas, pausedGameCanvas, 
+                  victoryCanvas, creditsCanvas;    
 
 
     //=========================================================================
@@ -20,18 +22,6 @@ public class MenuManager : MonoBehaviour
         {
             sharedInstance = this;
         }
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
 
@@ -57,5 +47,34 @@ public class MenuManager : MonoBehaviour
     }
     public void hideGameOverMenu(){
         gameOverCanvas.enabled = false;
+    }
+
+    public void showPauseMenu(){
+        pausedGameCanvas.enabled = true;
+    }
+    public void hidePauseMenu(){
+        pausedGameCanvas.enabled = false;
+    }
+
+    public void showVictoryMenu(){
+        victoryCanvas.enabled = true;
+    }
+    public void hideVictoryMenu(){
+        victoryCanvas.enabled = false;
+    }
+
+    public void showCreditsMenu(){
+        creditsCanvas.enabled = true;
+    }
+    public void hideCreditsMenu(){
+        creditsCanvas.enabled = false;
+    }
+
+    public void hideNotInGameMenus(){
+        hideMainMenu();
+        hideGameOverMenu();
+        hidePauseMenu();
+        hideVictoryMenu();
+        showGameMenu();
     }
 }
