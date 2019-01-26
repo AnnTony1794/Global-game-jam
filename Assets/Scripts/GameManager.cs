@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     //=========================================================================
     public static GameManager sharedInstance; //Singleton
     public GameState currentGameState; //GameState
+    public AudioSource audio;
 
 
     private void Awake() {
@@ -27,7 +28,7 @@ public class GameManager : MonoBehaviour
         if(sharedInstance == null){
             sharedInstance = this;
         }
-        
+        audio = GetComponent<AudioSource>();
     }
 
 
@@ -38,6 +39,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         currentGameState  = GameState.menu;
+        audio.play();
     }
 
     // Update is called once per frame
