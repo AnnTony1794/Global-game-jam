@@ -2,8 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum GameState
+{
+    inGame,
+    menu,
+    gameOver
+}
+
 public class GameManager : MonoBehaviour
 {
+    //=========================================================================
+    //Variables
+    //=========================================================================
+    public static GameManager sharedInstance; //Singleton
+    public GameState currentGameState = GameState.menu; //GameState
+
+
+    private void Awake() {
+        //Instanciate singleton
+        if(sharedInstance == null){
+            sharedInstance = this;
+        }    
+    }
+
+
+    //=========================================================================
+    //Unity methods
+    //=========================================================================
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +39,26 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+    
+
+    //=========================================================================
+    //Our methods
+    //=========================================================================
+    
+    private void SetGameState(GameState newGameState)
+    {
+        switch (newGameState)
+        {
+            case GameState.inGame:
+            //TODO: Iniciar o reiniciar la escena.
+            break;
+            case GameState.menu:
+            //TODO: Mostrar menú.
+            break;
+            case GameState.gameOver:
+            //TODO: Lógica de muerte.
+            break;
+        }
     }
 }
