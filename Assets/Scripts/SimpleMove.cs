@@ -7,6 +7,7 @@ public class SimpleMove : MonoBehaviour
     public float time = 1f;
     public int damage = 1;
     public float RotationSpeed = 1;
+    public int sanity = 1;
     void Start()
     {
         InvokeRepeating("insanity", 1f, time);
@@ -29,5 +30,11 @@ public class SimpleMove : MonoBehaviour
 
     private void insanity(){
         SanityManager.sharedInstance.sanityIncrease(damage);
+    }
+
+    public void OnTriggerStay(Collider other) {
+        if(other.tag == "fire"){
+            SanityManager.sharedInstance.sanityDecrease(sanity);
+        }
     }
 }
