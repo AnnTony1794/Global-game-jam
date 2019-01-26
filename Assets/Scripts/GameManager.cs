@@ -23,7 +23,8 @@ public class GameManager : MonoBehaviour
         //Instanciate singleton
         if(sharedInstance == null){
             sharedInstance = this;
-        }    
+        }
+        
     }
 
 
@@ -47,6 +48,10 @@ public class GameManager : MonoBehaviour
     //Our methods
     //=========================================================================
     
+    public void ChangeGameState(){
+
+    }
+
     private void SetGameState(GameState newGameState)
     {
         switch (newGameState)
