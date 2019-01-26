@@ -287,6 +287,7 @@ Transform:
   m_Father: {fileID: 1285470744}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 100.772, y: 0, z: -0.000015258789}
+<<<<<<< Updated upstream
 --- !u!1 &134875131
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,6 +387,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> Stashed changes
 --- !u!1 &146741067
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,7 +486,7 @@ Transform:
   m_LocalScale: {x: 10.282, y: 10.282, z: 10.282}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &204800578
 GameObject:
@@ -704,7 +707,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fe7f407167a0ece46b0457c707026166, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f83444638ebddb84888ffbe0fdc77b21, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1026,7 +1029,7 @@ Transform:
   - {fileID: 291172678}
   - {fileID: 2118629444}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &598693914
 GameObject:
@@ -1092,6 +1095,7 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
@@ -1099,6 +1103,13 @@ MonoBehaviour:
     m_Bits: 4294967295
 --- !u!114 &630762038
 MonoBehaviour:
+=======
+  time: 1
+  damage: 1
+  RotationSpeed: 1
+--- !u!212 &1285470743
+SpriteRenderer:
+>>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1880,7 +1891,7 @@ Transform:
   - {fileID: 103886700}
   - {fileID: 598693915}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1285470745
 MonoBehaviour:
@@ -2168,6 +2179,7 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1567794811}
   m_Enabled: 1
+<<<<<<< Updated upstream
   m_EditorHideFlags: 0
   m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -2179,6 +2191,20 @@ MonoBehaviour:
     m_Bits: 4294967295
 --- !u!114 &1567794813
 MonoBehaviour:
+=======
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0ab5ee476dfdf0445a9a9ac8861ae410, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!212 &1599527914
+SpriteRenderer:
+>>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2219,9 +2245,25 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
+<<<<<<< Updated upstream
   m_TargetDisplay: 0
 --- !u!224 &1567794815
 RectTransform:
+=======
+  m_Sprite: {fileID: 21300000, guid: 2a1095f2bdf274542a61529fc68e9ce0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.29, y: 0.51}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1599527915
+Transform:
+>>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2233,6 +2275,7 @@ RectTransform:
   m_Children:
   - {fileID: 1984371350}
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2271,6 +2314,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 409888675}
   m_RootOrder: 0
+=======
+  m_RootOrder: 2
+>>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2656,7 +2702,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c56cc7e869bcc0e48be7e9a93a23fe0e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1886c32cd23bd9b4db9eb0c8ffbb6885, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
