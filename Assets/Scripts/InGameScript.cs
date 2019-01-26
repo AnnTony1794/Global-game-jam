@@ -16,5 +16,8 @@ public class InGameScript : MonoBehaviour
     void Update()
     {
         text.text = "Sanity: " + SanityManager.sharedInstance.playerSanity;
+        MenuManager.sharedInstance.setGameCanvasState(
+            SanityManager.sharedInstance.playerSanity
+        );
     }
 }

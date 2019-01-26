@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 4d3fefa280d28454ebbbed3c22721ed4
 TextureImporter:
   fileIDToRecycleName:
@@ -8,11 +9,20 @@ TextureImporter:
     21300006: sombra tronco 2_3
     21300008: sombra tronco 2_4
     21300010: sombra tronco 2_5
+=======
+guid: a6fc1d73925caf146b3827b20592198b
+TextureImporter:
+  fileIDToRecycleName: {}
+>>>>>>> SorryMomo
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
     mipMapMode: 0
+<<<<<<< HEAD
     enableMipMap: 0
+=======
+    enableMipMap: 1
+>>>>>>> SorryMomo
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,6 +47,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 0
     aniso: -1
     mipBias: -100
@@ -47,6 +58,18 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
+=======
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: -1
+    wrapV: -1
+    wrapW: -1
+  nPOTScale: 1
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 0
+>>>>>>> SorryMomo
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -55,9 +78,15 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
+<<<<<<< HEAD
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
+=======
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 0
+>>>>>>> SorryMomo
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -69,6 +98,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
     textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
@@ -81,6 +111,9 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
+=======
+    textureCompression: 1
+>>>>>>> SorryMomo
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -88,6 +121,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
+<<<<<<< HEAD
     sprites:
     - serializedVersion: 2
       name: sombra tronco 2_0
@@ -213,6 +247,13 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: caa7adc7c1aab6f4aa31cf7e4793264e
+=======
+    sprites: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+>>>>>>> SorryMomo
     vertices: []
     indices: 
     edges: []
