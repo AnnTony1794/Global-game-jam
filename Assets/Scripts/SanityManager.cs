@@ -63,7 +63,7 @@ public class SanityManager : MonoBehaviour
             return;
         }
         playerSanity += sanity;
-        if(playerSanity > MAX_SANITY){
+        if(playerSanity >= MAX_SANITY){
             playerSanity = MAX_SANITY;
         }
     }

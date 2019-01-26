@@ -27,6 +27,7 @@ public class Checkpoint : MonoBehaviour
             PlayerPrefs.SetFloat("checkpointX", other.transform.position.x);
             PlayerPrefs.SetFloat("checkpointY", other.transform.position.y);
             PlayerPrefs.SetFloat("checkpointZ", other.transform.position.z);
+            Debug.Log(PlayerPrefs.GetFloat("checkpointX"));
         }
     }
 
