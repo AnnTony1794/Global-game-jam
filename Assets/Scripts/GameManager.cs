@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     //=========================================================================
     public static GameManager sharedInstance; //Singleton
     public GameState currentGameState; //GameState
+    private AudioSource audio;
 
 
     private void Awake() {
@@ -27,7 +28,7 @@ public class GameManager : MonoBehaviour
         if(sharedInstance == null){
             sharedInstance = this;
         }
-        
+        audio = GetComponent<AudioSource>();
     }
 
 
@@ -93,7 +94,7 @@ public class GameManager : MonoBehaviour
         }
     }
     public void startGame(){
-        GetComponent<AudioSource>().Play();
+        audio.Play();
         //Esconder todos los demás menus.
         MenuManager.sharedInstance.hideNotInGameMenus();
         ContinueGame();
@@ -106,17 +107,20 @@ public class GameManager : MonoBehaviour
         currentGameState = GameState.inGame;
     }
     public void pauseGame(){
+        audio.Pause();
         MenuManager.sharedInstance.showPauseMenu();
         currentGameState = GameState.paused;
         PauseGame();
     }
     public void die(){
+        audio.Stop();
         pauseGame();
         MenuManager.sharedInstance.hidePauseMenu();
         MenuManager.sharedInstance.showGameOverMenu();
         currentGameState = GameState.gameOver;
     }
     public void win(){
+        audio.Stop();
         MenuManager.sharedInstance.showVictoryMenu();
         currentGameState = GameState.victory;
     }
