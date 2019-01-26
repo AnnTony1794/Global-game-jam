@@ -5,7 +5,7 @@ using UnityEngine;
 public class SimpleMove : MonoBehaviour
 {
     public float time = 1f;
-    public int damage = 1;
+    public int damage = 20;
     public float RotationSpeed = 1;
     public int gainSanity = 1;
 
@@ -25,8 +25,8 @@ public class SimpleMove : MonoBehaviour
         float hor = Input.GetAxis("Horizontal");
         float ver = Input.GetAxis("Vertical");
 
-        float a = Mathf.Abs(hor) + Mathf.Abs(ver);
-        animator.SetFloat("Speed", a);
+        // float a = Mathf.Abs(hor) + Mathf.Abs(ver);
+        // animator.SetFloat("Speed", a);
 
         Vector3 playerMovement = new Vector3(hor, 0, ver) * 10 * Time.deltaTime;
         transform.Translate(playerMovement, Space.Self);
