@@ -53,7 +53,7 @@ public class MovementInput : MonoBehaviour
         InputX = Input.GetAxis("Horizontal");
         InputZ = Input.GetAxis("Vertical");
 
-        var camera = Camera.main;
+        // var camera = Camera.main;
         var forward = cam.transform.forward;
         var right = cam.transform.right;
 
