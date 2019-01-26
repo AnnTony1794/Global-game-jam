@@ -55,12 +55,18 @@ public class SanityManager : MonoBehaviour
     //Our methods
     //=========================================================================
     public void sanityIncrease(int sanity){
+        if(GameManager.sharedInstance.currentGameState == GameState.paused){
+            return;
+        }
         playerSanity += sanity;
         if(playerSanity > MAX_SANITY){
             playerSanity = MAX_SANITY;
         }
     }
     public void sanityDecrease(int sanity){
+        if(GameManager.sharedInstance.currentGameState == GameState.paused){
+            return;
+        }
         playerSanity += sanity;
         if(playerSanity < MIN_SANITY){
             playerSanity = MIN_SANITY;

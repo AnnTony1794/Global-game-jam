@@ -114,4 +114,5 @@ public class GameManager : MonoBehaviour
         //Resetear al personaje y regresarlo al punto de inicio.
         //Resetear el nivel si es que hay cambios a lo largo de la partida.
     }
+
 }
