@@ -3,15 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public enum GameState
-{
-    inGame,
-    menu,
-    gameOver,
-    paused,
-    victory,
-    credits
-}
 
 public class GameManager : MonoBehaviour
 {
@@ -38,6 +29,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         currentGameState  = GameState.menu;
+        audio.Play();
     }
 
     // Update is called once per frame
@@ -142,4 +134,13 @@ public class GameManager : MonoBehaviour
         GameObject.FindGameObjectWithTag("Player").GetComponent<SimpleMove>().enabled = true;
         GameObject.Find("InGameCanvas").GetComponent<InGameScript>().enabled = true;
     }
+}
+public enum GameState
+{
+    inGame,
+    menu,
+    gameOver,
+    paused,
+    victory,
+    credits
 }
