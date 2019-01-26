@@ -122,6 +122,7 @@ public class GameManager : MonoBehaviour
     public void restartGame(){
         startGame();
         //Resetear al personaje y regresarlo al punto de inicio.
+        Checkpoint.sharedInstance.restartOnCheckpoint();
         //Resetear el nivel si es que hay cambios a lo largo de la partida.
     }
 

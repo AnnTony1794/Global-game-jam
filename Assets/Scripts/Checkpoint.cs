@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Checkpoint : MonoBehaviour
 {
-    private static Checkpoint sharedInstance;
+    public static Checkpoint sharedInstance;
     private Transform transform;
     float x, y , z;
     // Start is called before the first frame update
@@ -27,7 +27,6 @@ public class Checkpoint : MonoBehaviour
             PlayerPrefs.SetFloat("checkpointX", other.transform.position.x);
             PlayerPrefs.SetFloat("checkpointY", other.transform.position.y);
             PlayerPrefs.SetFloat("checkpointZ", other.transform.position.z);
-            Debug.Log(PlayerPrefs.GetFloat("checkpointX"));
         }
     }
 
