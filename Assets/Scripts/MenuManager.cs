@@ -8,7 +8,9 @@ public class MenuManager : MonoBehaviour
     //Variables
     //=========================================================================
     public static MenuManager sharedInstance;
-    public Canvas menuCanvas, gameCanvas, gameOverCanvas;    
+    public Canvas menuCanvas, gameCanvas, 
+                  gameOverCanvas, pausedGameCanvas, 
+                  victoryCanvas, creditsCanvas;    
 
 
     //=========================================================================
@@ -22,40 +24,62 @@ public class MenuManager : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 
     //=========================================================================
     //Our methods
     //=========================================================================
-    public void ShowMainMenu(){
+    public void showMainMenu(){
         menuCanvas.enabled = true;
     }
-    public void HideMainMenu(){
+    public void hideMainMenu(){
         menuCanvas.enabled = false;
     }
 
-    public void ShowGameMenu(){
+    public void showGameMenu(){
         gameCanvas.enabled = true;
     }
-    public void HideGameMenu(){
+    public void hideGameMenu(){
         gameCanvas.enabled = false;
     }
 
-    public void ShowGameOverMenu(){
+    public void showGameOverMenu(){
         gameOverCanvas.enabled = true;
     }
-    public void HideGameOverMenu(){
+    public void hideGameOverMenu(){
         gameOverCanvas.enabled = false;
+    }
+
+    public void showPauseMenu(){
+        pausedGameCanvas.enabled = true;
+    }
+    public void hidePauseMenu(){
+        pausedGameCanvas.enabled = false;
+    }
+
+    public void showVictoryMenu(){
+        victoryCanvas.enabled = true;
+    }
+    public void hideVictoryMenu(){
+        victoryCanvas.enabled = false;
+    }
+
+    public void showCreditsMenu(){
+        creditsCanvas.enabled = true;
+    }
+    public void hideCreditsMenu(){
+        creditsCanvas.enabled = false;
+    }
+
+    public void hideNotInGameMenus(){
+        hideMainMenu();
+        hideGameOverMenu();
+        hidePauseMenu();
+        hideVictoryMenu();
+        showGameMenu();
+    }
+
+    public void setGameCanvasState(){
+        //TODO: lógica para cambiar la pantalla del inGame cuando el personaje
+        //va perdiendo cordura.
     }
 }
