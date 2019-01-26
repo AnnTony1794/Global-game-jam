@@ -77,4 +77,9 @@ public class MenuManager : MonoBehaviour
         hideVictoryMenu();
         showGameMenu();
     }
+
+    public void setGameCanvasState(){
+        //TODO: lógica para cambiar la pantalla del inGame cuando el personaje
+        //va perdiendo cordura.
+    }
 }

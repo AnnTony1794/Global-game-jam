@@ -114,8 +114,4 @@ public class GameManager : MonoBehaviour
         //Resetear al personaje y regresarlo al punto de inicio.
         //Resetear el nivel si es que hay cambios a lo largo de la partida.
     }
-    public void setInGameCanvasState(){
-        //TODO: lógica para cambiar la pantalla del inGame cuando el personaje
-        //va perdiendo cordura.
-    }
 }
