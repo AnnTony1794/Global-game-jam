@@ -5,7 +5,7 @@ using UnityEngine;
 public class SimpleMove : MonoBehaviour
 {
     public float time = 1f;
-    public int damage = 1;
+    public int damage = 20;
     public float RotationSpeed = 1;
     public int gainSanity = 1;
 
