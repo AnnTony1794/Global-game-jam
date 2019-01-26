@@ -32,7 +32,7 @@ public class Checkpoint : MonoBehaviour
 
     public void restartOnCheckpoint(){
         x = PlayerPrefs.GetFloat("checkpointX");
-        y = PlayerPrefs.GetFloat("checkpointY");
+        y = 2.39f;
         z = PlayerPrefs.GetFloat("checkpointZ");
         transform.position = new Vector3(x, y ,z);
     }
