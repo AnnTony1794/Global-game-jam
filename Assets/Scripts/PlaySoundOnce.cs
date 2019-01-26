@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class PlaySoundOnce : MonoBehaviour
 {
-    public AudioClip clip;
-    public float volumen;
     AudioSource source;
+    public float volumen;
     private bool wasPlayed = false;
 
 
@@ -22,12 +21,31 @@ public class PlaySoundOnce : MonoBehaviour
     {
 
     }
-    void onTriggerEnter()
+
+    // void OnCollisionEnter(Collision collision)
+    // {
+    //     print(collision.gameObject.tag);
+    //     if (collision.gameObject.tag == "Player")
+    //         if (!wasPlayed)
+    //         {
+    //             source.Play();
+    //             wasPlayed = true;
+    //         }
+    // }
+
+
+    void OnTriggerEnter(Collider other)
     {
+        print("collision");
         if (!wasPlayed)
         {
-            source.PlayOneShot(clip, volumen);
-            wasPlayed = true;
+            if (other.gameObject.tag == "Player")
+            {
+                source.Play();
+                wasPlayed = true;
+            }
         }
     }
+
+
 }
