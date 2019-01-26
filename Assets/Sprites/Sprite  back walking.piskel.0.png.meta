@@ -1,23 +1,28 @@
 fileFormatVersion: 2
-guid: 6e771cedab921454689a43fcb68a3c9f
+<<<<<<< HEAD
+guid: a2d9e1354d2b93e40951b0abad46f4e8
+TextureImporter:
+  fileIDToRecycleName: {}
+=======
+guid: 7393d40c5d1a92a459252949cd9d32dd
 TextureImporter:
   fileIDToRecycleName:
-    21300000: fogata loop_0
-    21300002: fogata loop_1
-    21300004: fogata loop_2
-    21300006: fogata loop_3
-    21300008: fogata loop_4
-    21300010: fogata loop_5
-    21300012: fogata loop_6
-    21300014: fogata loop_7
-    21300016: fogata loop_8
-    21300018: fogata loop_9
-    21300020: fogata loop_10
+    21300000: walk_0
+    21300002: walk_1
+    21300004: walk_2
+    21300006: walk_3
+    21300008: walk_4
+    21300010: walk_5
+>>>>>>> 783115ad265c03b9f2e79a24c60101022db0bbda
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
     mipMapMode: 0
+<<<<<<< HEAD
+    enableMipMap: 1
+=======
     enableMipMap: 0
+>>>>>>> 783115ad265c03b9f2e79a24c60101022db0bbda
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -42,6 +47,18 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: -1
+    wrapV: -1
+    wrapW: -1
+  nPOTScale: 1
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 0
+=======
     filterMode: 0
     aniso: -1
     mipBias: -100
@@ -52,6 +69,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
+>>>>>>> 783115ad265c03b9f2e79a24c60101022db0bbda
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -60,9 +78,15 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
+<<<<<<< HEAD
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 0
+=======
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
+>>>>>>> 783115ad265c03b9f2e79a24c60101022db0bbda
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -74,6 +98,9 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
+    textureCompression: 1
+=======
     textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
@@ -86,6 +113,7 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
+>>>>>>> 783115ad265c03b9f2e79a24c60101022db0bbda
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -93,155 +121,82 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
+<<<<<<< HEAD
+    sprites: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+=======
     sprites:
     - serializedVersion: 2
-      name: fogata loop_0
+      name: walk_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 96
-        width: 30
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b4a92d05578aca648970c2566de21924
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fogata loop_1
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 96
-        width: 30
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8948546d385f49245a490a377f33927d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fogata loop_2
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 96
-        width: 30
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b1c554f3ffd7cb344a341eaeee26e860
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fogata loop_3
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 64
-        width: 30
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f9d23ba8f4a005144b2073a8e77c56fb
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fogata loop_4
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 64
+        x: 18
+        y: 138
         width: 29
-        height: 22
+        height: 51
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a3678d4e28604c489e8b238d001c46a
+      spriteID: 1622baedda2022346a6e317c8acc5e10
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fogata loop_5
+      name: walk_1
       rect:
         serializedVersion: 2
-        x: 65
-        y: 64
-        width: 30
-        height: 22
+        x: 82
+        y: 138
+        width: 29
+        height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9d840390ef2b9f4c9252362d80d50f8
+      spriteID: 6afb227977923a74b8b18ca493b1a9c6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fogata loop_6
+      name: walk_2
       rect:
         serializedVersion: 2
-        x: 1
-        y: 32
-        width: 30
-        height: 22
+        x: 18
+        y: 74
+        width: 29
+        height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afc135503640b9646bc699abd0e1371e
+      spriteID: 58af8d802abc86d4ba7fb679c572b9e4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fogata loop_7
+      name: walk_3
       rect:
         serializedVersion: 2
-        x: 33
-        y: 32
-        width: 30
-        height: 22
+        x: 82
+        y: 74
+        width: 29
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,19 +204,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d83bd20fd700e04438a9d263836db152
+      spriteID: 0379ea7904411ee4385f558a99a2429a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fogata loop_8
+      name: walk_4
       rect:
         serializedVersion: 2
-        x: 65
-        y: 32
-        width: 30
-        height: 22
+        x: 18
+        y: 10
+        width: 29
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,19 +224,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59ea487e7db65854a91691766c81aed9
+      spriteID: 27b99f50302e554409d0f0f3024cf8ae
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fogata loop_9
+      name: walk_5
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 30
-        height: 22
+        x: 82
+        y: 10
+        width: 29
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,27 +244,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 225f2edde8421fd4a8c3753844c65691
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fogata loop_10
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 0
-        width: 30
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9bb5cf5e012787c4e9f6aee23ebd77fc
+      spriteID: a802456c46fd2cb42a7aa79a584f0c07
       vertices: []
       indices: 
       edges: []
@@ -317,7 +252,8 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 770e5d1a551a2f743bb56387e1cc2a57
+    spriteID: e81def13c9bfc3d4aa78b6ba0085390a
+>>>>>>> 783115ad265c03b9f2e79a24c60101022db0bbda
     vertices: []
     indices: 
     edges: []
