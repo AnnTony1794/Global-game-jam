@@ -6,7 +6,6 @@ public class ImagesEdgy : MonoBehaviour
 {
     public SpriteRenderer img_normal;
     public SpriteRenderer img_edgy;
-    public SpriteRenderer img_ojos = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,10 +32,6 @@ public class ImagesEdgy : MonoBehaviour
         //float aaa = 100.0*Mathf.Abs(SanityManager.sharedInstance.playerSanity - 0)/(double)Mathf.Max(SanityManager.sharedInstance.playerSanity, 0)
         img_normal.color = new Color(img_normal.color.r, img_normal.color.g, img_normal.color.b, normal);
 
-        if (img_ojos != null)
-        {
-            
-        }
 
     }
 }

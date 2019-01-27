@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8267057047598083278}
   - component: {fileID: 5281809256783613961}
+  - component: {fileID: 1431870868312699095}
   m_Layer: 0
   m_Name: ojos
   m_TagString: Untagged
@@ -79,3 +80,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1431870868312699095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7875473485565233805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc09d9e193ec49e46b1fe48984dd2b53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 5281809256783613961}
