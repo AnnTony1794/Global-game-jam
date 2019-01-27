@@ -8,6 +8,7 @@ public class SoundManager : MonoBehaviour
     public AudioMixerSnapshot Fogata;
     public AudioMixerSnapshot Fondo;
     public AudioMixerSnapshot Cordura;
+    public AudioMixerSnapshot Credits;
     private bool fogataza = false;
     private bool cordu = false;
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.Audio;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,10 +11,11 @@ public class GameManager : MonoBehaviour
     //=========================================================================
     public static GameManager sharedInstance; //Singleton
     public GameState currentGameState; //GameState
-    private AudioSource audio;
+    private AudioSource[] audio;
     public bool osoide;
     private int randomBear;
-
+    public AudioMixerSnapshot Credits;
+    public AudioMixerSnapshot Fondo;
     private GameObject osos;
 
     private void Awake() {
@@ -22,7 +23,7 @@ public class GameManager : MonoBehaviour
         if(sharedInstance == null){
             sharedInstance = this;
         }
-        audio = GetComponent<AudioSource>();
+        audio = GetComponents<AudioSource>();
         osos = GameObject.Find("Ositos");
     }
 
@@ -57,14 +58,20 @@ public class GameManager : MonoBehaviour
             }
             else if(currentGameState == GameState.victory){
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                Credits.TransitionTo(0f);
+                audio[1].Play();
             }
             else if(currentGameState == GameState.menu){
                 MenuManager.sharedInstance.showCreditsMenu();
+                Credits.TransitionTo(0f);
+                audio[1].Play();
                 MenuManager.sharedInstance.hideMainMenu();
                 currentGameState = GameState.credits;
             }
             else if(currentGameState == GameState.credits){
                 MenuManager.sharedInstance.hideCreditsMenu();
+                Fondo.TransitionTo(0f);
+                audio[1].Stop();
                 MenuManager.sharedInstance.showMainMenu();
                 currentGameState = GameState.menu;
             }
@@ -104,7 +111,7 @@ public class GameManager : MonoBehaviour
         }
     }
     public void startGame(){
-        audio.Play();
+        audio[0].Play();
         //Esconder todos los demás menus.
         MenuManager.sharedInstance.hideNotInGameMenus();
         ContinueGame();
@@ -117,20 +124,20 @@ public class GameManager : MonoBehaviour
         currentGameState = GameState.inGame;
     }
     public void pauseGame(){
-        audio.Pause();
+        audio[0].Pause();
         MenuManager.sharedInstance.showPauseMenu();
         currentGameState = GameState.paused;
         PauseGame();
     }
     public void die(){
-        audio.Stop();
+        audio[0].Stop();
         pauseGame();
         MenuManager.sharedInstance.hidePauseMenu();
         MenuManager.sharedInstance.showGameOverMenu();
         currentGameState = GameState.gameOver;
     }
     public void win(){
-        audio.Stop();
+        audio[0].Stop();
         PauseGame();
         MenuManager.sharedInstance.showVictoryMenu();
         currentGameState = GameState.victory;
