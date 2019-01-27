@@ -34,10 +34,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         currentGameState  = GameState.menu;
-        osoide = false;
-        randomBear = (int) (Random.Range(0, osos.transform.childCount));
-        
-        
+        osoide = false;        
     }
 
     // Update is called once per frame
