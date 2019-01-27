@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5942281139401939604}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0013}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7712937341967074338}
@@ -104,7 +104,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7048365515585733522}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7712937341967074338}
@@ -250,6 +250,7 @@ GameObject:
   - component: {fileID: 6673419632830875724}
   - component: {fileID: 849092889122494617}
   - component: {fileID: 4679068518120140700}
+  - component: {fileID: 5763613026353160878}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
@@ -369,6 +370,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   img_normal: {fileID: 2275776647641171339}
   img_edgy: {fileID: 8532255925892837763}
+--- !u!114 &5763613026353160878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8158631525658669637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c108d6472d3e6104d9a157e5e1a907f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img_normal: {fileID: 4847552588820409778}
+  img_edgy: {fileID: 7353444477975990885}
 --- !u!1 &8417194814017986791
 GameObject:
   m_ObjectHideFlags: 0
