@@ -19,7 +19,7 @@ public class ImagesEdgy : MonoBehaviour
         //float edgy = SanityManager.sharedInstance.playerSanity / 100; //rememeber kids, do not divide by a int number of you are expecting
         //float results
 
-        float edgy = SanityManager.sharedInstance.playerSanity / 100.0f;
+        float edgy = SanityManager.sharedInstance.playerSanity / 60.0f;
         float normal = ((SanityManager.sharedInstance.playerSanity * -1.0f) + 100.0f)/100.0f; //Number * negative + max value, implying min is 0
         img_edgy.color = new Color(img_edgy.color.r, img_edgy.color.g, img_edgy.color.b, edgy);
 

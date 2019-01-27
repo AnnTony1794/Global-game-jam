@@ -25,8 +25,8 @@ public class SimpleMove : MonoBehaviour
         float hor = Input.GetAxis("Horizontal");
         float ver = Input.GetAxis("Vertical");
 
-        // float a = Mathf.Abs(hor) + Mathf.Abs(ver);
-        // animator.SetFloat("Speed", a);
+        float a = Mathf.Abs(hor) + Mathf.Abs(ver);
+        animator.SetFloat("Speed", a);
 
         Vector3 playerMovement = new Vector3(hor, 0, ver) * 10 * Time.deltaTime;
         transform.Translate(playerMovement, Space.Self);
