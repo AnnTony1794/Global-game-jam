@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MixerSong
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300002}
+  m_Snapshots:
+  - {fileID: 245069496171241536}
+  - {fileID: 245203857044621538}
+  m_StartSnapshot: {fileID: 245069496171241536}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 1
+  m_UpdateMode: 0
+  m_ExposedParameters: []
+  m_AudioMixerGroupViews:
+  - guids:
+    - 75d10e0e6f88a0c4bbb3ec37bd50ce0d
+    - 1870d93a40d43fc4fbd9c6997dfe35d4
+    - cdd9349aeb293da40bead307f57c1aa0
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 245069496171241536}
+--- !u!243 &24300002
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 75d10e0e6f88a0c4bbb3ec37bd50ce0d
+  m_Children:
+  - {fileID: 243606955086996650}
+  - {fileID: 243603770733365936}
+  m_Volume: 77f6289070130f449b3885d0f3f75855
+  m_Pitch: 74ef97cdddb49ea4aa203544624db433
+  m_Effects:
+  - {fileID: 24400004}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400004
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 7fb5982dec3513d4ba919643ff55d6c1
+  m_EffectName: Attenuation
+  m_MixLevel: d4814d83e7ca4724fb849d318c25a8cf
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!243 &243603770733365936
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Fondo
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 1870d93a40d43fc4fbd9c6997dfe35d4
+  m_Children: []
+  m_Volume: 2ebd19a7e80314d46bf745280deedd7c
+  m_Pitch: acbf613dbaf892e4298c07fea7523466
+  m_Effects:
+  - {fileID: 244981545025667668}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!243 &243606955086996650
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Fogata
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: cdd9349aeb293da40bead307f57c1aa0
+  m_Children: []
+  m_Volume: c794c5d4db9e3d74c891716c9b354c74
+  m_Pitch: 85f454ec54558504fbeba25ba55fb86b
+  m_Effects:
+  - {fileID: 244113167000420774}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &244113167000420774
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: de15b00f7288d6147823745fb840d63a
+  m_EffectName: Attenuation
+  m_MixLevel: 9b9cd2c2d3ac5384aaf388e5d2d0dc02
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &244981545025667668
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: e0edf941f13ecb74396a6aa04d95c7d1
+  m_EffectName: Attenuation
+  m_MixLevel: 425604fa633e7254abc6b58912aca511
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &245069496171241536
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Fondo
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: b2d132ef27be0da43905224d6d2e1026
+  m_FloatValues:
+    c794c5d4db9e3d74c891716c9b354c74: -80
+    2ebd19a7e80314d46bf745280deedd7c: -0.002441872
+  m_TransitionOverrides: {}
+--- !u!245 &245203857044621538
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Fogata
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: cd0b316da10ee6f4f8c3cbfd97c3bed0
+  m_FloatValues:
+    c794c5d4db9e3d74c891716c9b354c74: -0.0024418721
+    2ebd19a7e80314d46bf745280deedd7c: -80
+  m_TransitionOverrides: {}
