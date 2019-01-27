@@ -37,6 +37,13 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(currentGameState == GameState.menu)
+        {
+            if(Input.GetButtonDown("Submit"))
+            {
+                startGame();
+            }
+        }
         if(Input.GetButtonDown("Cancel")){
             if(currentGameState == GameState.inGame){
                 setGameState(GameState.paused);
