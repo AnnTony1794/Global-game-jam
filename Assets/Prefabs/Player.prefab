@@ -111,7 +111,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4989540206116668752}
   - component: {fileID: 4989540206116668759}
-  - component: {fileID: 4989540206116668758}
   - component: {fileID: 4989540206116668753}
   m_Layer: 0
   m_Name: Camara
@@ -128,7 +127,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4989540206116668757}
   m_LocalRotation: {x: 0.09386501, y: 0.000000017576546, z: -0.00000018642677, w: 0.99558496}
-  m_LocalPosition: {x: 0, y: 0.613, z: -2.004}
+  m_LocalPosition: {x: 0, y: 0.682, z: -2.592}
   m_LocalScale: {x: 0.03598522, y: 0.056651473, z: 0.09578756}
   m_Children: []
   m_Father: {fileID: 4989540207032438820}
@@ -176,14 +175,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &4989540206116668758
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4989540206116668757}
-  m_Enabled: 1
 --- !u!45 &4989540206116668753
 Skybox:
   m_ObjectHideFlags: 0
@@ -208,8 +199,10 @@ GameObject:
   - component: {fileID: 4989540207032438822}
   - component: {fileID: 4989540207032438823}
   - component: {fileID: 4304767714777773889}
-  - component: {fileID: 1211917062}
-  - component: {fileID: 4076265123085403673}
+  - component: {fileID: 803091049}
+  - component: {fileID: 803091050}
+  - component: {fileID: 803091051}
+  - component: {fileID: 536183956441398329}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -288,7 +281,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4989540207032438825}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1ce8b46de5f8ed42a614ed0b28116f4, type: 3}
   m_Name: 
@@ -359,7 +352,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!82 &1211917062
+--- !u!82 &803091049
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -368,12 +361,13 @@ AudioSource:
   m_GameObject: {fileID: 4989540207032438825}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0eb0a70c27ee9e54b9030abd3732fc85, type: 3}
+  OutputAudioMixerGroup: {fileID: 243603770733365936, guid: ec11156cbefb8d042b1cd285914c28d1,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: b418d4ed1aa60434bb890ba655f3d423, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -455,7 +449,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!82 &4076265123085403673
+--- !u!82 &803091050
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -466,10 +460,10 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9a4f2282c2e1f464b8466956c0a87a7b, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -551,6 +545,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!81 &803091051
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4989540207032438825}
+  m_Enabled: 1
+--- !u!114 &536183956441398329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4989540207032438825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82f40fcade9ba5e42835b794efd922fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Fogata: {fileID: 245203857044621538, guid: ec11156cbefb8d042b1cd285914c28d1, type: 2}
+  Fondo: {fileID: 245069496171241536, guid: ec11156cbefb8d042b1cd285914c28d1, type: 2}
 --- !u!1 &4989540207049366057
 GameObject:
   m_ObjectHideFlags: 0

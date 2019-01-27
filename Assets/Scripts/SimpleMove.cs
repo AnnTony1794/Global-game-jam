@@ -9,6 +9,10 @@ public class SimpleMove : MonoBehaviour
     public float RotationSpeed = 1;
     public int gainSanity = 1;
 
+    public float Speed = 1.3f;
+
+    public float gainSanitySpeed = 0.2f;
+
     public Animator animator;
     private AudioSource[] audios;
 
@@ -32,7 +36,7 @@ public class SimpleMove : MonoBehaviour
         animator.SetFloat("Speed", a);
 
         Vector3 playerMovement = new Vector3(hor, 0, ver) * 10 * Time.deltaTime;
-        transform.Translate(playerMovement, Space.Self);
+        transform.Translate(playerMovement * Speed, Space.Self);
 
         hor = Input.GetAxis("Horizontal2");
         transform.Rotate(0, hor * 1.2f, 0);
@@ -60,7 +64,7 @@ public class SimpleMove : MonoBehaviour
     {
         if (other.tag == "fire")
         {
-            InvokeRepeating("sanity", 1f, 0.5f);
+            InvokeRepeating("sanity", 1f, gainSanitySpeed);
         }
     }
     public void OnTriggerExit(Collider other)

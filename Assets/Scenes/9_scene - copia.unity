@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.003995845, g: 0.00021793606, b: 0.00000005149207,
+  m_IndirectSpecularColor: {r: 0.0039958465, g: 0.00021793593, b: 0.00000005149207,
     a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
@@ -3712,7 +3712,8 @@ AudioSource:
   m_GameObject: {fileID: 803091041}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243603770733365936, guid: ec11156cbefb8d042b1cd285914c28d1,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: b418d4ed1aa60434bb890ba655f3d423, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -3910,11 +3911,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 473886751}
     m_Modifications:
-    - target: {fileID: 3373286859632069233, guid: 258256af3c0f62a4abc1ab8e5e3a2801,
-        type: 3}
-      propertyPath: m_Name
-      value: Checkpoint
-      objectReference: {fileID: 0}
     - target: {fileID: 3373286859632069246, guid: 258256af3c0f62a4abc1ab8e5e3a2801,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3984,6 +3980,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 23.462244
+      objectReference: {fileID: 0}
+    - target: {fileID: 3373286859632069233, guid: 258256af3c0f62a4abc1ab8e5e3a2801,
+        type: 3}
+      propertyPath: m_Name
+      value: Checkpoint
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 258256af3c0f62a4abc1ab8e5e3a2801, type: 3}
@@ -6922,11 +6923,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 473886751}
     m_Modifications:
-    - target: {fileID: 3373286859632069233, guid: 258256af3c0f62a4abc1ab8e5e3a2801,
-        type: 3}
-      propertyPath: m_Name
-      value: Checkpoint (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 3373286859632069246, guid: 258256af3c0f62a4abc1ab8e5e3a2801,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6996,6 +6992,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.x
       value: 17.836
+      objectReference: {fileID: 0}
+    - target: {fileID: 3373286859632069233, guid: 258256af3c0f62a4abc1ab8e5e3a2801,
+        type: 3}
+      propertyPath: m_Name
+      value: Checkpoint (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 258256af3c0f62a4abc1ab8e5e3a2801, type: 3}
@@ -8803,7 +8804,7 @@ PrefabInstance:
     - target: {fileID: 4989540207032438820, guid: 7bdb4cda341cd4043814aaf72246b38b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -362
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 4989540207032438820, guid: 7bdb4cda341cd4043814aaf72246b38b,
         type: 3}
@@ -8813,7 +8814,7 @@ PrefabInstance:
     - target: {fileID: 4989540207032438820, guid: 7bdb4cda341cd4043814aaf72246b38b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -391.91
+      value: -405.7
       objectReference: {fileID: 0}
     - target: {fileID: 4989540207032438820, guid: 7bdb4cda341cd4043814aaf72246b38b,
         type: 3}
@@ -8823,7 +8824,7 @@ PrefabInstance:
     - target: {fileID: 4989540207032438820, guid: 7bdb4cda341cd4043814aaf72246b38b,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4989540207032438820, guid: 7bdb4cda341cd4043814aaf72246b38b,
         type: 3}
@@ -8833,7 +8834,7 @@ PrefabInstance:
     - target: {fileID: 4989540207032438820, guid: 7bdb4cda341cd4043814aaf72246b38b,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4989540207032438820, guid: 7bdb4cda341cd4043814aaf72246b38b,
         type: 3}
@@ -8848,7 +8849,7 @@ PrefabInstance:
     - target: {fileID: 4989540207032438820, guid: 7bdb4cda341cd4043814aaf72246b38b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 4989540207032438820, guid: 7bdb4cda341cd4043814aaf72246b38b,
         type: 3}
@@ -8864,6 +8865,16 @@ PrefabInstance:
         type: 3}
       propertyPath: damage
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4989540207032438826, guid: 7bdb4cda341cd4043814aaf72246b38b,
+        type: 3}
+      propertyPath: gainSanity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4989540207032438826, guid: 7bdb4cda341cd4043814aaf72246b38b,
+        type: 3}
+      propertyPath: Speed
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4989540206116668752, guid: 7bdb4cda341cd4043814aaf72246b38b,
         type: 3}
