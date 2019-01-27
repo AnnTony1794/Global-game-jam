@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public static GameManager sharedInstance; //Singleton
     public GameState currentGameState; //GameState
     private AudioSource audio;
+    public bool osoide;
 
 
     private void Awake() {
@@ -30,6 +31,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         currentGameState  = GameState.menu;
+        osoide = false;
     }
 
     // Update is called once per frame
@@ -61,6 +63,12 @@ public class GameManager : MonoBehaviour
         }
         if (currentGameState == GameState.gameOver){
             MenuManager.sharedInstance.setGameOverImageAlpha(0.7f);
+        }
+        if (currentGameState == GameState.victory){
+            MenuManager.sharedInstance.setVictoryAlpha(0.7f);
+        }
+        if (osoide){
+            MenuManager.sharedInstance.setOsoInGameAlpha(2f);
         }
     }
     
@@ -115,6 +123,7 @@ public class GameManager : MonoBehaviour
     }
     public void win(){
         audio.Stop();
+        PauseGame();
         MenuManager.sharedInstance.showVictoryMenu();
         currentGameState = GameState.victory;
     }

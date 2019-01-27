@@ -9,6 +9,7 @@ TagManager:
   - FogataFondo
   - house
   - oso
+  - osoInGame
   layers:
   - Default
   - TransparentFX

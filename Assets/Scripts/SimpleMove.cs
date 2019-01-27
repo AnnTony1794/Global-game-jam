@@ -66,6 +66,13 @@ public class SimpleMove : MonoBehaviour
         {
             InvokeRepeating("sanity", 1f, gainSanitySpeed);
         }
+        if (other.tag == "oso"){
+            GameManager.sharedInstance.osoide = true;
+            other.GetComponent<SpriteRenderer>().enabled = false;
+        }
+        if (other.tag == "house" && GameManager.sharedInstance.osoide){
+            GameManager.sharedInstance.win();
+        }
     }
     public void OnTriggerExit(Collider other)
     {

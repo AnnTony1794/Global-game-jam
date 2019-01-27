@@ -12,8 +12,8 @@ public class MenuManager : MonoBehaviour
     public Canvas menuCanvas, gameCanvas, 
                   gameOverCanvas, pausedGameCanvas, 
                   victoryCanvas, creditsCanvas;    
-    private RawImage gameCanvasColor, gameOverImage;
-    private float gameOverAlpha;
+    private RawImage gameCanvasColor, gameOverImage, victoryImage, osoImage;
+    private float gameOverAlpha, victoryAlpha, osoAlpha;
 
 
     //=========================================================================
@@ -27,10 +27,14 @@ public class MenuManager : MonoBehaviour
         }
         gameCanvasColor = gameCanvas.GetComponentInChildren<RawImage>();
         gameOverImage = gameOverCanvas.GetComponentInChildren<RawImage>();
+        victoryImage = victoryCanvas.GetComponentInChildren<RawImage>();
+        osoImage = GameObject.FindGameObjectWithTag("osoInGame").GetComponent<RawImage>();
     }
 
     private void Start() {
         gameOverAlpha = 0;
+        victoryAlpha = 0;
+        osoAlpha = 0;
     }
 
     //=========================================================================
@@ -98,5 +102,23 @@ public class MenuManager : MonoBehaviour
         }
         gameOverAlpha += alpha;
         gameOverImage.color = new Vector4(1f, 1f, 1f, gameOverAlpha/100.0f);
+    }
+
+    public void setVictoryAlpha(float alpha){
+        if (victoryAlpha >= 100.0f){
+            return;
+        }
+        victoryAlpha += alpha;
+        victoryImage.color = new Vector4(1f, 1f, 1f, victoryAlpha/100.0f);
+    
+    }
+
+    public void setOsoInGameAlpha(float alpha){
+        if (osoAlpha >= 100.0f){
+            return;
+        }
+        osoAlpha += alpha;
+        osoImage.color = new Vector4(1f, 1f, 1f, osoAlpha/100.0f);
+    
     }
 }
