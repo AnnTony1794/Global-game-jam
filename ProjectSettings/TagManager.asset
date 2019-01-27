@@ -6,6 +6,9 @@ TagManager:
   tags:
   - checkpoint
   - fire
+  - FogataFondo
+  - house
+  - oso
   layers:
   - Default
   - TransparentFX
