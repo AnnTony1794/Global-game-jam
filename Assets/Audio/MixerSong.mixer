@@ -12,6 +12,7 @@ AudioMixerController:
   m_Snapshots:
   - {fileID: 245069496171241536}
   - {fileID: 245203857044621538}
+  - {fileID: 245475312657551572}
   m_StartSnapshot: {fileID: 245069496171241536}
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
@@ -20,8 +21,9 @@ AudioMixerController:
   m_AudioMixerGroupViews:
   - guids:
     - 75d10e0e6f88a0c4bbb3ec37bd50ce0d
-    - 1870d93a40d43fc4fbd9c6997dfe35d4
     - cdd9349aeb293da40bead307f57c1aa0
+    - 1870d93a40d43fc4fbd9c6997dfe35d4
+    - f823974247979564282fcd8f73bdedf0
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 245203857044621538}
@@ -37,6 +39,7 @@ AudioMixerGroupController:
   m_Children:
   - {fileID: 243606955086996650}
   - {fileID: 243603770733365936}
+  - {fileID: 243278780541888356}
   m_Volume: 77f6289070130f449b3885d0f3f75855
   m_Pitch: 74ef97cdddb49ea4aa203544624db433
   m_Effects:
@@ -59,6 +62,24 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!243 &243278780541888356
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Cordura
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: f823974247979564282fcd8f73bdedf0
+  m_Children: []
+  m_Volume: 0fe5dccb2a7304247a0482135fe9ee87
+  m_Pitch: 3ff1dd800d615b64d9ea3e9681a16c47
+  m_Effects:
+  - {fileID: 244089489801482818}
+  m_UserColorIndex: 8
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
 --- !u!243 &243603770733365936
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
@@ -95,6 +116,20 @@ AudioMixerGroupController:
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
+--- !u!244 &244089489801482818
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 2ab7958af6873e0488488ccdc151b770
+  m_EffectName: Attenuation
+  m_MixLevel: 17c9e203c12e0cf478f9a7b55658336b
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &244113167000420774
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
@@ -135,6 +170,7 @@ AudioMixerSnapshotController:
   m_FloatValues:
     c794c5d4db9e3d74c891716c9b354c74: -80
     2ebd19a7e80314d46bf745280deedd7c: -0.002441872
+    0fe5dccb2a7304247a0482135fe9ee87: -80
   m_TransitionOverrides: {}
 --- !u!245 &245203857044621538
 AudioMixerSnapshotController:
@@ -147,5 +183,19 @@ AudioMixerSnapshotController:
   m_SnapshotID: cd0b316da10ee6f4f8c3cbfd97c3bed0
   m_FloatValues:
     c794c5d4db9e3d74c891716c9b354c74: 9.097023
+    2ebd19a7e80314d46bf745280deedd7c: -80
+    0fe5dccb2a7304247a0482135fe9ee87: -80
+  m_TransitionOverrides: {}
+--- !u!245 &245475312657551572
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Cordura
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 83dae50f122d10a40921172fc5a771e4
+  m_FloatValues:
+    c794c5d4db9e3d74c891716c9b354c74: -80
     2ebd19a7e80314d46bf745280deedd7c: -80
   m_TransitionOverrides: {}
