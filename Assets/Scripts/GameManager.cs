@@ -60,6 +60,9 @@ public class GameManager : MonoBehaviour
                 currentGameState = GameState.menu;
             }
         }
+        if (currentGameState == GameState.gameOver){
+            MenuManager.sharedInstance.setGameOverImageAlpha(0.5f);
+        }
     }
     
 

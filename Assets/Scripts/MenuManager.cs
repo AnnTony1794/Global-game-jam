@@ -12,7 +12,8 @@ public class MenuManager : MonoBehaviour
     public Canvas menuCanvas, gameCanvas, 
                   gameOverCanvas, pausedGameCanvas, 
                   victoryCanvas, creditsCanvas;    
-    private RawImage gameCanvasColor;
+    private RawImage gameCanvasColor, gameOverImage;
+    private float gameOverAlpha;
 
 
     //=========================================================================
@@ -25,9 +26,11 @@ public class MenuManager : MonoBehaviour
             sharedInstance = this;
         }
         gameCanvasColor = gameCanvas.GetComponentInChildren<RawImage>();
+        gameOverImage = gameOverCanvas.GetComponentInChildren<RawImage>();
     }
 
     private void Start() {
+        gameOverAlpha = 0;
     }
 
     //=========================================================================
@@ -51,6 +54,8 @@ public class MenuManager : MonoBehaviour
         gameOverCanvas.enabled = true;
     }
     public void hideGameOverMenu(){
+        gameOverAlpha = 0;
+        gameOverImage.color = new Vector4(1f, 1f, 1f, 0f);
         gameOverCanvas.enabled = false;
     }
 
@@ -85,5 +90,13 @@ public class MenuManager : MonoBehaviour
 
     public void setGameCanvasState(float alpha){
         gameCanvasColor.color = new Vector4(0f, 0f, 0f, alpha/100);
+    }
+
+    public void setGameOverImageAlpha(float alpha){
+        if (gameOverAlpha >= 100.0f){
+            return;
+        }
+        gameOverAlpha += alpha;
+        gameOverImage.color = new Vector4(1f, 1f, 1f, gameOverAlpha/100.0f);
     }
 }
