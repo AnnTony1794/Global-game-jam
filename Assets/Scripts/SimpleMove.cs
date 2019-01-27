@@ -10,10 +10,13 @@ public class SimpleMove : MonoBehaviour
     public int gainSanity = 1;
 
     public Animator animator;
+    private AudioSource[] audios;
 
     void Start()
     {
         InvokeRepeating("insanity", 1f, time);
+        //GetComponent<AudioSource>().Play();
+        audios = GetComponents<AudioSource>();
     }
     void Update()
     {
@@ -33,6 +36,15 @@ public class SimpleMove : MonoBehaviour
 
         hor = Input.GetAxis("Horizontal2");
         transform.Rotate(0, hor * 1.2f, 0);
+       
+       if(ver != 0 || hor != 0){
+            if(audios[1].isPlaying){
+                return;
+            }
+            audios[1].Play();
+        }else{
+            audios[1].Pause();
+        }
     }
 
     private void insanity()

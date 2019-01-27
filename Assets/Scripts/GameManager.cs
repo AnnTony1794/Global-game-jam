@@ -30,7 +30,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         currentGameState  = GameState.menu;
-        GetComponent<AudioSource>().Play();
     }
 
     // Update is called once per frame
@@ -61,7 +60,7 @@ public class GameManager : MonoBehaviour
             }
         }
         if (currentGameState == GameState.gameOver){
-            MenuManager.sharedInstance.setGameOverImageAlpha(0.5f);
+            MenuManager.sharedInstance.setGameOverImageAlpha(0.7f);
         }
     }
     
