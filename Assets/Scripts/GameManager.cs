@@ -13,7 +13,9 @@ public class GameManager : MonoBehaviour
     public GameState currentGameState; //GameState
     private AudioSource audio;
     public bool osoide;
+    private int randomBear;
 
+    private GameObject osos;
 
     private void Awake() {
         //Instanciate singleton
@@ -21,6 +23,7 @@ public class GameManager : MonoBehaviour
             sharedInstance = this;
         }
         audio = GetComponent<AudioSource>();
+        osos = GameObject.Find("Ositos");
     }
 
 
@@ -32,11 +35,19 @@ public class GameManager : MonoBehaviour
     {
         currentGameState  = GameState.menu;
         osoide = false;
+        randomBear = (int) (Random.Range(0, osos.transform.childCount));
+        
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (currentGameState == GameState.menu){
+            if (Input.GetButtonDown("Submit")){
+                startGame();
+            }
+        }
         if(Input.GetButtonDown("Cancel")){
             if(currentGameState == GameState.inGame){
                 setGameState(GameState.paused);
